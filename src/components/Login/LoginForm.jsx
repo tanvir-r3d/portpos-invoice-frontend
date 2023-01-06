@@ -1,5 +1,12 @@
 import {useDispatch, useSelector} from "react-redux";
 import {useNavigate} from "react-router-dom";
+import {useFormik} from "formik";
+import * as Yup from "yup";
+import {withAsync} from "../../network/withAsync";
+import {submitLogin} from "../../network/api/v1/Auth";
+import {toast, ToastContainer} from "react-toastify";
+import {useEffect} from "react";
+import {login} from "../../slices/authSlice";
 
 function LoginForm() {
 
@@ -17,38 +24,33 @@ function LoginForm() {
             password: Yup.string().required('Password Is Required'),
         }),
         onSubmit: (values, {resetForm}) => {
-            axios.post(`${API}/auth/login`, values)
-                .then((response) => {
-                    if (response.status === 201) {
-                        dispatch(login(response.data));
-                    }
-                    toast.success("Login Successfully");
-                    resetForm({values: ''});
-                })
-                .catch((err) => {
-                    console.log(err);
-                })
+            const {response, error} = withAsync(submitLogin, values);
+            if (response.status === 201) {
+                dispatch(login(response.data));
+            }
+            toast.success("Login Successfully");
+            resetForm({values: ''});
+            if (error) {
+                console.log(error);
+            }
         }
     });
 
     const handleLogIn = () => {
         loginForm.handleSubmit();
-        navigate('/home', {replace: true})
-    }
-
-    const handleRegister = () => {
-        navigate('/register', {replace: true})
+        navigate('/', {replace: true})
     }
 
     useEffect(() => {
         if (isLoggedIn) {
-            navigate('/home', {replace: true});
+            navigate('/', {replace: true});
         }
     }, [isLoggedIn, navigate]);
 
 
     return (
         <>
+            <ToastContainer/>
             <div className="container-md">
                 <div className="row vh-100 d-flex justify-content-center">
                     <div className="col-12 align-self-center">
@@ -58,14 +60,9 @@ function LoginForm() {
                                     <div className="card">
                                         <div className="card-body p-0 auth-header-box">
                                             <div className="text-center p-3">
-                                                <a href="/" className="logo logo-admin">
-                                                    <img src="assets/images/document.webp" height={50} alt="logo"
-                                                         className="auth-logo"/>
-                                                </a>
                                                 <h4 className="mt-3 mb-1 fw-semibold text-white font-18">Let's Get
                                                     Started Document Vault</h4>
-                                                <p className="text-muted  mb-0">Sign in to continue to Document
-                                                    Vault.</p>
+                                                <p className="text-muted  mb-0">Sign in to continue.</p>
                                             </div>
                                         </div>
                                         <div className="card-body pt-0">
@@ -104,24 +101,6 @@ function LoginForm() {
                                                     </div>
                                                 </div>
                                                 {/*end form-group*/}
-                                                <div className="form-group row mt-3">
-                                                    <div className="col-sm-6">
-                                                        <div className="form-check form-switch form-switch-success">
-                                                            <input className="form-check-input" type="checkbox"
-                                                                   id="customSwitchSuccess"/>
-                                                            <label className="form-check-label"
-                                                                   htmlFor="customSwitchSuccess">Remember me</label>
-                                                        </div>
-                                                    </div>
-                                                    {/*end col*/}
-                                                    <div className="col-sm-6 text-end">
-                                                        <a href="auth-recover-pw.html"
-                                                           className="text-muted font-13"><i
-                                                            className="dripicons-lock"/> Forgot password?</a>
-                                                    </div>
-                                                    {/*end col*/}
-                                                </div>
-                                                {/*end form-group*/}
                                                 <div className="form-group mb-0 row">
                                                     <div className="col-12">
                                                         <div className="d-grid mt-3">
@@ -136,17 +115,6 @@ function LoginForm() {
                                                 {/*end form-group*/}
                                             </form>
                                             {/*end form*/}
-                                            <div className="m-3 text-center text-muted">
-                                                <p className="mb-0">Don't have an account ? <a
-                                                    onClick={handleRegister}
-                                                    href="#"
-                                                    className="text-primary ms-2">Free
-                                                    Resister</a></p>
-                                            </div>
-                                            <hr className="hr-dashed mt-4"/>
-                                            <div className="text-center mt-n5">
-                                                <h6 className="card-bg px-3 my-4 d-inline-block">Or Login With</h6>
-                                            </div>
                                         </div>
                                         {/*end card-body*/}
                                     </div>
