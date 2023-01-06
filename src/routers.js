@@ -1,10 +1,23 @@
 import {createBrowserRouter} from "react-router-dom";
-import List from "./components/Order/List";
+import OrderList from "./components/Order/OrderList";
+import OrderCreate from "./components/Order/OrderCreate";
 
 
 export const router = createBrowserRouter([
     {
-        path: "/",
-        element: <List/>,
+        path: "/orders",
+        element: <OrderList/>,
     },
+    {
+        path: "/orders/create",
+        element: <OrderCreate/>,
+    },
+    // {
+    //     path: "/products",
+    //     element: <ProductList/>,
+    // },
+    // {
+    //     path: "/products/create",
+    //     element: <ProductCreate/>,
+    // },
 ]);
