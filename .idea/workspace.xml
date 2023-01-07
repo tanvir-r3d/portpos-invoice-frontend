@@ -4,22 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ea08a02-c440-4e14-945e-a5a5cef9ecdb" name="Changes" comment="">
+    <list default="true" id="e7eea24b-07c1-48ac-b10b-419664e1e579" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/LoginForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/LoginForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Order/OrderCreate.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Order/OrderCreate.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Product/ProductCreate.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Product/ProductList.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/network/interceptors/v1/http.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/network/interceptors/v1/http.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaScript File" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,11 +27,15 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2JuuykIxH3fPhoDibcxRyjCGFFQ" />
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="ProjectId" id="2JyrNs5zxf2CCjlKNOoaBdPThKS" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -40,21 +44,15 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/fahad/Documents/portpos-invoice-frontend&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/authSlices" />
-    </key>
-  </component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -75,17 +73,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9ea08a02-c440-4e14-945e-a5a5cef9ecdb" name="Changes" comment="" />
-      <created>1672940546440</created>
+      <changelist id="e7eea24b-07c1-48ac-b10b-419664e1e579" name="Changes" comment="" />
+      <created>1673061126822</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1672940546440</updated>
-      <workItem from="1672940551464" duration="19000" />
-      <workItem from="1672940592470" duration="2794000" />
-      <workItem from="1672973372794" duration="5762000" />
-      <workItem from="1672979560574" duration="25000" />
-      <workItem from="1673031326796" duration="191000" />
-      <workItem from="1673031519103" duration="6193000" />
+      <updated>1673061126822</updated>
+      <workItem from="1673061129596" duration="2441000" />
+      <workItem from="1673071576130" duration="2248000" />
     </task>
     <servers />
   </component>

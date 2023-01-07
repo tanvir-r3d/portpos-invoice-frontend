@@ -12,12 +12,4 @@ export const router = createBrowserRouter([
         path: "/orders/create",
         element: <OrderCreate/>,
     },
-    // {
-    //     path: "/products",
-    //     element: <ProductList/>,
-    // },
-    // {
-    //     path: "/products/create",
-    //     element: <ProductCreate/>,
-    // },
 ]);

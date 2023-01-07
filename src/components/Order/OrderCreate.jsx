@@ -48,7 +48,7 @@ function OrderCreate() {
             'email': Yup.string().required('Customer Email Required'),
             'phone': Yup.string().required('Customer Phone Required'),
             'address': Yup.string().required('Customer Address Required'),
-            'details': Yup.array().required('Atleast One Product required'),
+            'details': Yup.array().required('At Least One Product required'),
         }),
         onSubmit: async (values, {resetForm}) => {
             let res;
@@ -73,7 +73,7 @@ function OrderCreate() {
                         <h5 className="card-header">Create Order</h5>
                         <div className="card-body">
                             <Link to={'/orders'}>
-                                <button className="btn btn-primary">Order List</button>
+                                <button className="btn btn-primary" type="button">Order List</button>
                             </Link>
                             <form onSubmit={form.handleSubmit}>
                                 <div className="row mt-2">
@@ -88,7 +88,8 @@ function OrderCreate() {
                                                            id="name"
                                                            aria-describedby="name"
                                                            name="name"
-                                                           onChange={form.setFieldValue}
+                                                           onChange={form.handleChange}
+                                                           onBlur={form.handleBlur}
                                                            value={form.values.name}
                                                     />
                                                 </div>
@@ -99,7 +100,8 @@ function OrderCreate() {
                                                            className="form-control"
                                                            id="email"
                                                            name="email"
-                                                           onChange={form.setFieldValue}
+                                                           onChange={form.handleChange}
+                                                           onBlur={form.handleBlur}
                                                            value={form.values.email}
                                                     />
                                                 </div>
@@ -110,7 +112,8 @@ function OrderCreate() {
                                                            className="form-control"
                                                            id="phone"
                                                            name="phone"
-                                                           onChange={form.setFieldValue}
+                                                           onChange={form.handleChange}
+                                                           onBlur={form.handleBlur}
                                                            value={form.values.phone}
                                                     />
                                                 </div>
@@ -121,7 +124,8 @@ function OrderCreate() {
                                                               id="address"
                                                               rows="3"
                                                               name="address"
-                                                              onChange={form.setFieldValue}
+                                                              onChange={form.handleChange}
+                                                              onBlur={form.handleBlur}
                                                               value={form.values.address}
                                                     ></textarea>
                                                 </div>
