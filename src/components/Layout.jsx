@@ -3,6 +3,7 @@ import Topbar from "../layouts/Topbar";
 import Sidebar from "../layouts/Sidebar";
 import OrderList from "./Order/OrderList";
 import OrderCreate from "./Order/OrderCreate";
+import PrivateComponent from "./PrivateComponent";
 
 const Layout = () => {
     return (
@@ -15,14 +16,14 @@ const Layout = () => {
                         <main className="col-md-9 ml-sm-auto col-lg-10 px-md-4 py-4">
                             <Routes>
                                 <Route path="/orders" element={
-                                    // <PrivateComponent>
-                                    <OrderList/>
-                                    // </PrivateComponent>
+                                    <PrivateComponent>
+                                        <OrderList/>
+                                    </PrivateComponent>
                                 }/>
                                 <Route path="/orders/create" element={
-                                    // <PrivateComponent>
-                                    <OrderCreate/>
-                                    // </PrivateComponent>
+                                    <PrivateComponent>
+                                        <OrderCreate/>
+                                    </PrivateComponent>
                                 }/>
                             </Routes>
 

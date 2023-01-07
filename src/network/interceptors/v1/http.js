@@ -8,9 +8,9 @@ const http = axios.create({
     timeout: 1000,
     headers: {
         'Authorization': 'Bearer ' + token,
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Headers': 'X-Requested-With, Content-Type, Accept, Origin, Authorization',
-        'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
+        // 'Access-Control-Allow-Origin': '*',
+        // 'Access-Control-Allow-Headers': 'X-Requested-With, Content-Type, Accept, Origin, Authorization',
+        // 'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
     }
 });
 
