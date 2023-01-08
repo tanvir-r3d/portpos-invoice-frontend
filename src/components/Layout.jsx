@@ -15,20 +15,17 @@ const Layout = () => {
                         <Sidebar/>
                         <main className="col-md-9 ml-sm-auto col-lg-10 px-md-4 py-4">
                             <Routes>
-                                <Route path="/orders" element={
+                                <Route path="/" element={
                                     <PrivateComponent>
                                         <OrderList/>
                                     </PrivateComponent>
                                 }/>
-                                <Route path="/orders/create" element={
+                                <Route path="/create" element={
                                     <PrivateComponent>
                                         <OrderCreate/>
                                     </PrivateComponent>
                                 }/>
                             </Routes>
-
-
-                            {/*<RouterProvider router={router}/>*/}
                         </main>
                     </div>
                 </div>

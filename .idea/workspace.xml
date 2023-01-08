@@ -5,20 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7eea24b-07c1-48ac-b10b-419664e1e579" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Order/OrderCreate.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Order/OrderCreate.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Product/ProductCreate.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Product/ProductList.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Order/OrderList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Order/OrderList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Product/Product.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Sidebar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Topbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Topbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/network/api/v1/Order.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/network/api/v1/Order.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/network/interceptors/v1/http.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/network/interceptors/v1/http.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routers.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,20 +49,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
+    "ts.external.directory.path": "/snap/webstorm/294/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Order" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -79,6 +98,10 @@
       <updated>1673061126822</updated>
       <workItem from="1673061129596" duration="2441000" />
       <workItem from="1673071576130" duration="2248000" />
+      <workItem from="1673186984635" duration="4608000" />
+      <workItem from="1673192446486" duration="580000" />
+      <workItem from="1673194116558" duration="1494000" />
+      <workItem from="1673196005856" duration="2762000" />
     </task>
     <servers />
   </component>

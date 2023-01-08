@@ -7,11 +7,11 @@ function Dashboard() {
     const isLoggedIn = useSelector((state) => state.isLoggedIn);
     let {pathname} = useLocation();
     const renderElement = () => {
-        if (pathname === "/" && !isLoggedIn) {
-            return <LoginForm/>;
-        } else {
+        // if (pathname === "/" && !isLoggedIn) {
+        //     return <LoginForm/>;
+        // } else {
             return <Layout/>
-        }
+        // }
     }
     return (
         <>{renderElement()}</>
