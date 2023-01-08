@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7eea24b-07c1-48ac-b10b-419664e1e579" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Order/OrderCreate.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Order/OrderCreate.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Order/OrderList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Order/OrderList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Product/Product.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Sidebar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/Topbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Topbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/network/api/v1/Order.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/network/api/v1/Order.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/network/interceptors/v1/http.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/network/interceptors/v1/http.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routers.js" beforeDir="false" />
-    </list>
+    <list default="true" id="e7eea24b-07c1-48ac-b10b-419664e1e579" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +87,7 @@
       <workItem from="1673186984635" duration="4608000" />
       <workItem from="1673192446486" duration="580000" />
       <workItem from="1673194116558" duration="1494000" />
-      <workItem from="1673196005856" duration="2762000" />
+      <workItem from="1673196005856" duration="2839000" />
     </task>
     <servers />
   </component>
